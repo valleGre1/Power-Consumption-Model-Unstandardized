@@ -71,5 +71,5 @@ RB<sub>UL</sub>: % <br>
 V<sub>DL</sub> : kbyte <br>
 V<sub>UL</sub> : kbyte <br>
 A: linear power ratio $10^{\frac{dB}{10}}$ <br>
-P<sub>Max</sub>: dB <br>
+P<sub>Max</sub>: dBm <br>
 Power Demand: kW
