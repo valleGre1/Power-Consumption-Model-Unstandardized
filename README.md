@@ -73,3 +73,11 @@ V<sub>UL</sub> : kbyte <br>
 A: linear power ratio $10^{\frac{dB}{10}}$ <br>
 P<sub>Max</sub>: dBm <br>
 Power Demand: kW
+
+## How to Use the Model
+
+To estimate the power demand for a given technology, take the linear combination of your collected feature values and the corresponding coefficients from the relevant table above, then add the intercept:
+
+Power Demand = (coefficient<sub>1</sub> × feature<sub>1</sub>) + (coefficient<sub>2</sub> × feature<sub>2</sub>) + ... + Intercept
+
+For example, using the V1 model with RB<sub>DL</sub> as input for LTE800: Power Demand = 0.00119083 × RB<sub>DL</sub> + 0.117971. The same applies to the multi-feature tables, include one term per feature column for the chosen technology, using that row's coefficients, and sum them together with the intercept.
